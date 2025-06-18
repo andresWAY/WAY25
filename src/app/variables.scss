@@ -1,0 +1,145 @@
+@font-face {
+    font-family: 'Evil Empire';
+    src: url('/fonts/evil_empire.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+
+
+$negro: #333333;
+$blanco: #ffffff;
+$gris: #666666;
+$rojo-way: #ae263a;
+
+$evil: "veneer", sans-serif;
+
+
+$roboto: 'Roboto', sans-serif;
+
+$espacio-xs: 0.5rem;
+$espacio-sm: 1rem;
+$espacio-md: 2rem;
+$espacio-lg: 4rem;
+
+
+
+.txt_red{
+        color: $rojo-way;
+ }
+
+ ::selection {
+  background-color: #db2c15; // fondo de selección
+  color: #fff;              // texto seleccionado
+  text-shadow: none;
+}
+
+/* Compatibilidad con Firefox */
+::-moz-selection {
+  background-color: #db2c15;
+  color: #fff;
+  text-shadow: none;
+}
+
+/* Compatibilidad con Edge/IE */
+::-ms-selection {
+  background-color: #db2c15;
+  color: #fff;
+  text-shadow: none;
+}
+
+
+
+
+
+h1{
+  text-transform: uppercase;
+}
+
+
+//MIXINS RESPONSIVE
+
+@mixin media2200px {
+    @media only screen and (max-width: 2200px) {
+      @content;
+    }
+  }
+  
+  
+  @mixin media1730px {
+    @media only screen and (max-width: 1730px) {
+      @content;
+    }
+  }
+  
+  @mixin media1458px {
+    @media only screen and (max-width: 1458px) {
+      @content;
+    }
+  }
+  
+  @mixin media1390px {
+    @media only screen and (max-width: 1390px) {
+      @content;
+    }
+  }
+
+    @mixin media1300px {
+    @media only screen and (max-width: 1300px) {
+      @content;
+    }
+  }
+  
+  @mixin media1200px {
+    @media only screen and (max-width: 1200px) {
+      @content;
+    }
+  }
+  
+  @mixin media1000px {
+    @media only screen and (max-width: 1000px) {
+      @content;
+    }
+  }
+
+    @mixin media900px {
+    @media only screen and (max-width: 900px) {
+      @content;
+    }
+  }
+  
+  @mixin media800px {
+    @media only screen and (max-width: 800px) {
+      @content;
+    }
+  }
+  
+  @mixin media700px {
+    @media only screen and (max-width: 700px) {
+      @content;
+    }
+  }
+  
+  @mixin media600px {
+      @media only screen and (max-width: 600px) {
+        @content;
+      }
+    }
+  
+    @mixin media500px {
+      @media only screen and (max-width: 500px) {
+        @content;
+      }
+    }
+  
+    @mixin media390px {
+      @media only screen and (max-width: 390px) {
+        @content;
+      }
+    }
+  
+    @mixin media300px {
+      @media only screen and (max-width: 300px) {
+        @content;
+      }
+    }

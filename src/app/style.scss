@@ -1,0 +1,940 @@
+@import './variables';
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+//MASTER
+
+.landing__master{
+  background-image: url('/media/background.jpg');
+  width: 100vw;
+  min-height: 100vw;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
+
+  h1{
+    font-family: $evil;
+    color: $negro;
+    font-size: 3.5rem;
+
+      .txt_red{
+        color: $rojo-way;
+      }
+
+      @include media900px {
+			font-size: 3rem;
+			}
+  }
+  
+  h2{
+    font-family: $evil;
+    color: $negro;
+    font-size: 2.3rem;
+
+          @include media900px {
+            font-size: 2.5rem;
+            }
+  }
+
+  p{
+    font-family: $evil;
+    color: $negro;
+    font-size: 1.5rem;
+
+     @include media900px {
+            font-size: 1.3rem;
+            }
+  }
+
+}
+
+
+//HERO
+
+.video-wrapper {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  margin: 0 auto;
+  object-fit: cover;
+  max-height: 90vw;
+
+      .video-element {
+      width: 100%;
+      height: 100%;
+      display: block;
+      object-fit: cover;
+    }
+
+    .video-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 2;
+      width: 100%;
+      height: 100%;
+      cursor: pointer;
+    }
+
+    .video-overlay img,
+    .video-overlay::before {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .video-play-button {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: rgba(0, 0, 0, 0.7);
+      color: white;
+      border: none;
+      font-size: 4rem;
+      padding: 1rem 2rem;
+      border-radius: 50%;
+      cursor: pointer;
+    }
+}
+
+
+
+
+
+
+//INTRO
+
+.intro__master{
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 100px;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 5vw;
+  padding-right: 5vw;
+
+       @include media800px {
+            display: block;
+            position: relative;
+            margin-top: 60px;
+            }
+  
+
+    .intro__text{
+      position: relative;
+
+     
+      .rayo__master{
+
+        position: relative;
+        .rayo{
+        position: absolute;
+        top: 5px;
+        left: 300px;
+        width: 15px;
+        height: auto;
+
+              @include media900px {
+               left: 258px;
+              }
+      }
+      }
+      
+
+      .corazon__master{
+        position: relative;
+        .corazon{
+        position: absolute;
+        bottom: 3px;
+        left: 127px;
+        width: 20px;
+        height: auto;
+
+              @include media900px {
+               left: 110px;
+              }
+      }
+      }
+      }
+
+    .intro__line{
+      border-left: 3px dashed #333;
+      height: auto;
+      max-height: 260px;
+      margin-top: 40px;
+
+             @include media800px {
+            display: none;
+            }
+    }
+
+    .mano__rock{
+      max-width: 270px;
+      height: 100%;
+
+      @include media900px {
+			max-width: 200px;
+      height: 100%;
+			}
+
+      @include media800px {
+			position: absolute;
+      right: 20px;
+      bottom: -20px;
+      max-width: 100px;
+      height: auto;
+			}
+
+      @include media500px {
+			position: absolute;
+      right: 20px;
+      bottom: -80px;
+      max-width: 80px;
+      height: auto;
+			}
+      
+    }
+
+    .mano__rockera{
+      max-width: 270px;
+      height: 100%;
+
+      @include media900px {
+			max-width: 200px;
+      height: 100%;
+			}
+
+      @include media800px {
+			position: absolute;
+      right: 20px;
+      bottom: -20px;
+      max-width: 100px;
+      height: auto;
+			}
+
+      @include media500px {
+			position: absolute;
+      right: 20px;
+      bottom: -115px;
+      max-width: 80px;
+      height: auto;
+			}
+      
+    }
+}
+
+
+
+
+
+
+//SELECTION
+
+.selection__master{
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 100px;
+  margin-bottom: 50px;
+  padding-left: 5vw;
+  padding-right: 5vw;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+
+          @include media900px {
+        margin-top: 150px;
+        display: block;
+        }
+
+  .s__title{
+    margin-bottom: 50px;
+
+    @include media900px {
+        text-align: right;
+        }
+  }
+
+
+  .fresh {
+    animation: rotar-infinito 10s linear infinite;
+    width: 200px;
+    height: 200px;
+
+      @include media900px {
+        position: absolute;
+        left: 3vw;
+        top: -20px;
+        width: 130px;
+        height: 130px;
+        }
+
+        @include media600px {
+        position: absolute;
+        left: 3vw;
+        top: -70px;
+        width: 80px;
+        height: 80px;
+        }
+  }
+  
+  @keyframes rotar-infinito {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(-360deg);
+    }
+  }
+}
+
+
+
+
+
+//CAMISETAS
+
+
+.camisetas__master{
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 5vw;
+  padding-right: 5vw;
+  
+
+  .camiseta{
+    width: 50vw;
+    max-width: 500px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 80px;
+    margin-bottom: 20px;
+    justify-content: center;
+    display: flex;
+
+       @include media700px {
+        width: 80vw;
+    max-width: 500px;
+        }
+    }
+  
+
+  h1{
+    text-align: center;
+    color: $rojo-way;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//COMPONENTES
+
+//MARQUEE
+
+.marquee__master {
+  overflow: hidden;
+  background-color: #222;
+  padding: 1rem 0;
+  white-space: nowrap;
+
+         @include media800px {
+          padding: 0.5rem 0;
+        }
+
+  .marquee__contenedor {
+    display: flex;
+    width: fit-content;
+    animation: scroll-left 20s linear infinite;
+  }
+
+  .marquee__name{
+    font-family: $evil;
+    color: $blanco;
+    font-size: 2rem;
+    padding-top: 4px;
+    transform: scaleX(0.9);
+
+    @include media800px {
+        font-size: 1.5rem;
+        }
+  }
+
+  .marquee__img{
+    margin-left: 20px;
+    margin-right: 20px;
+    
+        @include media800px {
+          margin-left: 15px;
+          margin-right: 15px;
+        }
+  }
+  
+  .item {
+    display: flex;
+    align-items: center;
+    color: white;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 1.5rem;
+    gap: 1rem;
+    
+  }
+
+  .marquee__item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  @keyframes scroll-left {
+    0% {
+      transform: translateX(0%);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+}
+
+
+
+//SELECTION BUTTON
+
+.selection-container {
+  max-width: 500px;
+  margin-bottom: 10px;
+  text-align: center;
+  background-color: $rojo-way;
+  border-radius: 10px;
+
+        @include media900px {
+              max-width: 100%;
+              }
+
+  .selection__text{
+    justify-content: end;
+  }
+
+    .selection-button {
+      background-color: $rojo-way;
+      color: white;
+      padding: 1rem 1.5rem;
+      border: none;
+      font-size: 1.3rem;
+      font-family: $evil;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      width: 100%;
+      border-radius: 10px;
+      text-transform: uppercase;
+    }
+    
+    .selection-button:hover {
+      background-color: #6e0d0d;
+    }
+    
+    .selection-form {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      margin-top: 1.5rem;
+      animation: expand 0.3s ease-out;
+      max-width: 80%;
+      margin-left: auto;
+      margin-right: auto;
+      padding-bottom: 20px;
+    }
+    
+    .selection-form input,
+    .selection-form button {
+      border: none;
+      border-bottom: 1px solid $blanco;
+      background: transparent;
+      padding: 0.5rem 0;
+      font-size: 1rem;
+      outline: none;
+      color: $blanco;
+      font-family: $evil;
+      letter-spacing: 0.1rem;
+
+      &:focus {
+        border-bottom: 1px solid #c62828; // cambia color en focus si quieres
+      }
+
+  
+    }
+
+    .selection-form input::placeholder,
+    .selection-form textarea::placeholder {
+      color: #c7a7a7; // gris claro
+      opacity: 1;
+      font-family: $evil;
+      font-size: 1rem;
+      letter-spacing: 0.1rem;
+    }
+    
+    .selection-form button {
+      background-color: $negro;
+      color: white;
+      cursor: pointer;
+      border: none;
+      font-family: $evil;
+      font-size: 1.2rem;
+      padding-top: 13px;
+      padding-bottom: 10px;
+      border-radius: 10px;
+
+      &:hover{
+        background-color: #cf3e54;
+      }
+    }
+    
+    @keyframes expand {
+      from {
+        opacity: 0;
+        transform: scaleY(0.95);
+      }
+      to {
+        opacity: 1;
+        transform: scaleY(1);
+      }
+    }
+  
+}
+
+
+
+
+
+//CALAVERA
+
+.pirata {
+  position: relative;
+  padding: 2rem;
+  display: flex;
+  height: 250px;
+  padding-left: 5vw;
+  padding-right: 5vw;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 200px;
+  margin-bottom: 100px;
+
+          @include media800px {
+        height: 200px;
+        }
+
+         @include media700px {
+        margin-top: 100px;
+        }
+
+         @include media600px {
+        height: 130px;
+        margin-bottom: 50px;
+        }
+
+  .WAY{
+    position: absolute;
+    right: 10vw;
+    width: 100px;
+    height: auto;
+  }
+
+
+
+
+
+  .pirata__esquina {
+  width: 30vw;
+  border-top: 2px dashed #333;
+  border-right: 2px dashed #333;
+
+    .calavera{
+      max-width: 30vw;
+      width: auto;
+      height: auto;
+      max-height: 250px;
+      margin-top: 20px;
+      object-fit: contain;
+
+         @include media800px {
+        height: 200px;
+        }
+
+         @include media600px {
+        height: 130px;
+        }
+    }
+}
+
+.pirata__horizontal {
+  width: 100%;
+  border-bottom: 2px dashed #333;
+  margin-top: -2px; // conecta visualmente con la esquina
+  position: relative;
+
+    .tijeras{
+      position: absolute;
+      bottom: -17px;
+      right: -31px;
+      width: 50px;
+      height: auto;
+
+       @include media800px {
+        right: -20px;
+        }
+
+        @include media600px {
+        right: -10px;
+        }
+    }
+}
+
+.pirata__calavera {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100px;
+}
+
+}
+
+
+
+
+
+
+//LAVADORA
+
+.lavadora {
+  position: relative;
+  padding: 2rem;
+  display: flex;
+  height: 150px;
+  padding-left: 3vw;
+  padding-right: 3vw;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 100px;
+  margin-bottom: 50px;
+
+            @include media800px {
+        height: 150px;
+        }
+
+         @include media700px {
+        margin-top: 100px;
+        }
+
+         @include media600px {
+        height: 90px;
+        margin-bottom: 50px;
+        }
+
+
+  .lavadora__esquina {
+  width: 100%;
+  border-top: 2px dashed #333;
+  border-right: 2px dashed #333;
+
+    .lavadora_img{
+      max-width: 180px;
+      width: auto;
+      height: auto;
+      margin-top: 20px;
+
+ 
+    }
+}
+
+.lavadora__horizontal {
+  width: 30vw;
+  border-bottom: 2px dashed #333;
+  margin-top: -2px; // conecta visualmente con la esquina
+  position: relative;
+
+    .rosa{
+      width: 120px;
+      height: auto;
+      right: 4vw;
+      top: -50px;
+      position: absolute;
+
+         @include media800px {
+        width: 100px;
+        right: 2vw;
+        }
+
+         @include media600px {
+        width: 80px;
+        right: 0vw;
+        }
+    }
+}
+
+.pirata__calavera {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100px;
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+//SIZE SELECTOR
+
+.size-container {
+  text-align: center;
+  margin-bottom: 2rem;
+  margin-top: 20px;
+
+    .size-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .size-button {
+    background-color: $rojo-way;
+    color: $blanco;
+    font-family: $evil;
+    font-size: 1.5rem;
+    padding: 1rem;
+    border: none;
+    border-radius: 10px;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+    transition: transform 0.2s;
+
+    &:hover {
+      background-color: darken($rojo-way, 10%);
+      transform: scale(1.1);
+    }
+
+    &.active {
+      background-color: $negro;
+    }
+  }
+
+  .size-selected {
+    margin-bottom: 1rem;
+    color: $rojo-way;
+    font-family: $evil;
+    font-size: 1.2rem;
+  }
+
+
+  .size-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    max-width: 80%;
+    margin: 0 auto;
+    animation: expand 0.3s ease-out;
+    padding-bottom: 20px;
+    background-color: $rojo-way;
+    padding: 30px;
+    border-radius: 15px;
+
+    input {
+      border: none;
+      border-bottom: 1px solid $blanco;
+      background: transparent;
+      padding: 0.5rem 0;
+      font-size: 1rem;
+      outline: none;
+      color: $blanco;
+      font-family: $evil;
+      letter-spacing: 0.1rem;
+
+      &::placeholder {
+        color: #c7a7a7;
+        opacity: 1;
+      }
+
+      &:focus {
+        border-bottom: 1px solid #cf3e54;
+      }
+
+      &[readonly] {
+        font-weight: bold;
+        cursor: default;
+      }
+    }
+
+    button {
+      background-color: $negro;
+      color: white;
+      cursor: pointer;
+      border: none;
+      font-family: $evil;
+      font-size: 1.2rem;
+      padding-top: 13px;
+      padding-bottom: 10px;
+      border-radius: 10px;
+
+      &:hover{
+        background-color: #cf3e54;
+      }
+    }
+  }
+
+  @keyframes expand {
+    from {
+      opacity: 0;
+      transform: scaleY(0.95);
+    }
+    to {
+      opacity: 1;
+      transform: scaleY(1);
+    }
+  }
+
+}
+
+
+
+
+
+//FOOTER
+
+.footer {
+  background-color: $negro;
+  color: #e6dfd7;
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 80px;
+  margin-top: 150px;
+
+  .footer__text{
+    margin-top: 20px;
+    p{
+    color: white;
+    }
+  }
+
+  a {
+    color: #e6dfd7;
+    text-decoration: none;
+
+    &:hover {
+      color: #ff4e36;
+    }
+  }
+
+  .footer__email {
+    color: #ff4e36;
+    font-size: 1.2rem;
+  }
+
+  .footer__social {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+
+  .footer__legal {
+    font-size: 0.9rem;
+    margin-top: 1rem;
+  }
+}
+
+
+
+.foo
+{
+  
+  cursor: inherit;
+  display: flex;
+  margin-top: 30px;
+  background-color: #333333;
+  color: #333333 !important;
+
+  &:hover{
+    color: #333333 !important;
+  }
+}
