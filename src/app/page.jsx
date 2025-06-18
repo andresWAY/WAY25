@@ -59,7 +59,7 @@ export default function HomePage() {
         <section className="intro__master">
 
             <div className="intro__text">
-                <h2>Bueno, pues ya nos conoces..</h2>
+                <h2>Bueno, pues ya nos conoces.</h2>
                 <div className="rayo__master"><p>Algunas de las caras y también,<br></br>
                 como son algunas de nuestras ideas.</p><Image src="/media/rayo.png" alt="Rayo" width={100} height={217} className="rayo"></Image></div>
                 <br></br>
@@ -159,7 +159,7 @@ export default function HomePage() {
 
             <Image src="/media/camiseta.png" alt="camiseta" width={1100} height={1022} className="camiseta"></Image>
 
-            <h1>ELIGE LA TALLA QUE NECESITAS</h1>
+            <h1>ELIGE LA TALLA QUE NECESITAS.</h1>
 
             <SizeSelector></SizeSelector>
 
