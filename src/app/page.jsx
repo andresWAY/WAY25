@@ -59,7 +59,7 @@ export default function HomePage() {
         <section className="intro__master">
 
             <div className="intro__text">
-                <h2>Bueno, pues ya nos conoces.</h2>
+                <h2>Bueno, pues ya nos conoces..</h2>
                 <div className="rayo__master"><p>Algunas de las caras y también,<br></br>
                 como son algunas de nuestras ideas.</p><Image src="/media/rayo.png" alt="Rayo" width={100} height={217} className="rayo"></Image></div>
                 <br></br>
