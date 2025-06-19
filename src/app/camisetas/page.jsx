@@ -164,7 +164,7 @@ export default function HomePage() {
 
             <Image src="/media/camiseta.png" alt="camiseta" width={1100} height={1022} className="camiseta"></Image>
 
-            <h1>ELIGE LA TALLA QUE NECESITAS.</h1>
+            <h1>ELIGE LA TALLA QUE NECESITAS...</h1>
 
             <SizeSelector></SizeSelector>
 
