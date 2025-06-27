@@ -48,7 +48,7 @@ export default function HomePage() {
 
       <video
         ref={videoRef}
-        src="/media/VIDEO_CAMISETA_WAY_NUEVOS_CLIENTES_v6.mp4"
+        src="/media/VIDEO_CAMISETA_WAY_ANTIGUOS_v6.mp4"
         className="video-element"
         controls
         playsInline
